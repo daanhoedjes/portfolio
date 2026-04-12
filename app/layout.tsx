@@ -8,6 +8,8 @@ import {
   Roboto_Mono 
 } from 'next/font/google';
 import './globals.css';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
 
 // --- SANS-SERIF FONTS ---
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
@@ -44,7 +46,9 @@ export default function RootLayout({
           bg-gray-950 text-white antialiased
         `}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
