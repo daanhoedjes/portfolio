@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type ProjectCardProps = {
     title?: string;
     description?: string;
@@ -46,7 +48,13 @@ export default function ProjectCard({
             <div className="relative mb-4 overflow-hidden rounded-xl border border-cyan-500/20 bg-gradient-to-br from-[#121a2b] via-[#141d34] to-[#0b111d]">
                 <div className="pointer-events-none absolute -inset-x-10 -top-16 h-28 bg-cyan-400/10 blur-2xl" />
                 {imageSrc ? (
-                    <img src={imageSrc} alt={imageAlt} className="h-40 w-full object-cover opacity-90 transition duration-500 group-hover:scale-[1.02]" />
+                    <Image
+                    src={imageSrc}
+                    alt={imageAlt}
+                    width={640}
+                    height={256}
+                    className="h-40 w-full object-cover opacity-90 transition duration-500 group-hover:scale-[1.02]"
+                  />
                 ) : (
                     <div className="h-40 w-full p-4 text-[10px] leading-4 text-cyan-100/60">
                         <div className="h-full rounded-lg border border-cyan-400/15 bg-[#0b1323]/70 p-3 font-jetbrains">

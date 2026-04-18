@@ -3,6 +3,7 @@ import ProjectCard from "../components/features/ProjectCard";
 const projects = [
 	{
 		title: "AI Shopping Assistant",
+		imageSrc: "/ai_chatbot.png",
 		description:
 			"A Retrieval-Augmented Generation (RAG) chatbot designed specifically for Haarlemsewinkels, providing highly relevant, conversational product recommendations based on user queries and real-time inventory data.",
 		technologies: ["Python", "PostgreSQL", "React", "TypeScript",],
@@ -21,6 +22,7 @@ const projects = [
 	},
 	{
 		title: "Code Exchange",
+		imageSrc: "/code_exchange.png",
 		description:
 			"A Stack Overflow-style platform built with HTML, CSS, and TypeScript, featuring discussion forums, user profile management, a reputation system with upvotes and downvotes, and syntax-highlighted code snippets.",
 		technologies: ["HTML/CSS", "TypeScript", "MySQL"],
@@ -49,6 +51,7 @@ export default function ProjectsPage() {
 						key={project.title}
 						title={project.title}
 						description={project.description}
+						imageSrc={project.imageSrc}
 						technologies={project.technologies}
 						category={project.category}
 						githubUrl={project.githubUrl}

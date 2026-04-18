@@ -61,12 +61,12 @@ export default function Footer() {
                         className="mb-6 inline-flex items-center gap-3 text-base font-space text-gray-200 transition-colors hover:text-teal-300"
                     >
                         <span className="text-teal-400"><MailIcon /></span>
-                        <span>daan@example.com</span>
+                        <span>daanhoedjes@outlook.com</span>
                     </a>
 
                     <div className="flex items-center justify-center gap-4 text-gray-300">
                         <a
-                            href="https://github.com"
+                            href="https://github.com/daanhoedjes"
                             target="_blank"
                             rel="noreferrer"
                             aria-label="GitHub"

@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Left Content */}
       <div className="max-w-2xl z-10 font-fira">
         <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-2">
-          Hi, I'm Daan Hoedjes.
+          Hi, I'm Daan.
         </h1>
         <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-400 mb-6">
           Software Engineer
