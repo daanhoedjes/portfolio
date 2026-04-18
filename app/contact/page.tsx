@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen w-full flex items-center font-jetbrains justify-center px-6">
+    <main className="min-h-screen w-full flex items-center font-jetbrains justify-center">
       <div className="w-full max-w-5xl mx-auto flex flex-row md:flex-col gap-4">
         
         {/* TOP COLUMN */}
@@ -61,7 +61,7 @@ export default function ContactPage() {
 
               <button 
                 type="button" 
-                className="mt-4 bg-gradient-to-r from-teal-400 to-emerald-600 text-[#151517] font-extrabold uppercase tracking-widest py-4 px-6 rounded-full flex items-center justify-center gap-3 hover:opacity-90 transition-opacity text-[11px]"
+                className="cursor-pointer mt-4 bg-gradient-to-r from-teal-400 to-emerald-600 text-[#151517] font-extrabold uppercase tracking-widest py-4 px-6 rounded-full flex items-center justify-center gap-3 hover:opacity-90 transition-opacity text-[11px]"
               >
                 SEND MESSAGE
               </button>
@@ -102,9 +102,7 @@ export default function ContactPage() {
               {/* GITHUB */}
               <a href="https://github.com/daanhoedjes" target="_blank" rel="noreferrer" className="bg-[#151517] rounded-3xl p-8 flex flex-col items-center justify-center gap-5 border border-white/[0.03] hover:border-teal-500/20 transition-colors group">
                 <div className="text-white group-hover:text-teal-400 transition-colors">
-                  <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
+                  <svg className="w-8 h-8 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                 </div>
                 <span className="text-[10px] font-bold tracking-widest text-white uppercase text-center w-full">Github</span>
               </a>
@@ -112,13 +110,7 @@ export default function ContactPage() {
               {/* LINKEDIN */}
               <a href="https://www.linkedin.com/in/daan-hoedjes-a82a323b9/" target="_blank" rel="noreferrer" className="bg-[#151517] rounded-3xl p-8 flex flex-col items-center justify-center gap-5 border border-white/[0.03] hover:border-teal-500/20 transition-colors group">
                 <div className="text-white group-hover:text-teal-400 transition-colors">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="18" cy="5" r="3"></circle>
-                    <circle cx="6" cy="12" r="3"></circle>
-                    <circle cx="18" cy="19" r="3"></circle>
-                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-                  </svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="size-8"><g clipPath="url(#clip0_939_1222)"><path d="M21.333 0C22.8058 0 24 1.19423 24 2.66699V21.333C24 22.8058 22.8058 24 21.333 24H2.66699C1.19423 24 0 22.8058 0 21.333V2.66699C0 1.19423 1.19423 0 2.66699 0H21.333ZM3.67676 20.667H7.25586V9.11133H3.67676V20.667ZM16.46 8.75781C14.0081 8.758 12.9766 10.668 12.9766 10.668V9.11133H9.54395V20.667H12.9766V14.6006C12.9766 12.9754 13.7244 12.0079 15.1562 12.0078C16.4726 12.0078 17.1044 12.9376 17.1045 14.6006V20.667H20.666V13.3506C20.666 10.255 18.911 8.75781 16.46 8.75781ZM5.44922 3.33301C4.28014 3.33303 3.33301 4.28828 3.33301 5.46582C3.33305 6.64332 4.28017 7.59763 5.44922 7.59766C6.61829 7.59766 7.56538 6.64333 7.56543 5.46582C7.56543 4.28827 6.61832 3.33301 5.44922 3.33301Z" fill="currentColor"></path></g><defs><clipPath id="clip0_939_1222"><rect width="24" height="24" fill="white"></rect></clipPath></defs></svg>
                 </div>
                 <span className="text-[10px] font-bold tracking-widest text-white uppercase text-center w-full">Linkedin</span>
               </a>
