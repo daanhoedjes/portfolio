@@ -28,7 +28,7 @@ export default function Navbar() {
         </Link>
 
         {/* Resume Button */}
-        <Link 
+        <Link
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
