@@ -22,18 +22,9 @@ export default function Logo() {
       </defs>
 
       <g filter="url(#neon-glow)">
-        {/* Left Faceted Bar */}
+        {/* Vertical Bar */}
         <path 
-          d="M 17 15 L 25 24 L 25 76 L 17 85 Z" 
-          fill="url(#core-gradient)" 
-          stroke="#2dd4bf" 
-          strokeWidth="2.5" 
-          strokeLinejoin="round" 
-        />
-
-        {/* Outer D Curve with internal faceted cut */}
-        <path 
-          d="M 29 15 L 53 15 C 71 15 79 28 79 50 C 79 72 71 85 53 85 L 29 85 L 39 73 L 53 73 C 63 73 68 64 68 50 C 68 36 63 27 53 27 L 39 27 Z" 
+          d="M 50 15 L 62 25 L 62 75 L 50 85 L 38 75 L 38 25 Z" 
           fill="url(#core-gradient)" 
           stroke="#2dd4bf" 
           strokeWidth="2.5" 
