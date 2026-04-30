@@ -13,6 +13,7 @@ const projects = [
 	},
 	{
 		title: "Elections Project",
+		imageSrc: "/elections.png",
 		description:
 			"A full-stack web application that helps citizens make informed voting decisions by combining historical election data with modern AI capabilities. The platform offers tools for data analysis, interactive voting guidance, and community engagement around Dutch elections.",
 		technologies: ["Vue.js", "TypeScript", "Java", "Springboot"],
